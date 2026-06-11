@@ -1,0 +1,591 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Recruit — LINX株式会社</title>
+  <meta name="description" content="LINX株式会社の採用ページ。アウトソーシング事業を展開する私たちと、一緒に働きませんか。未経験・中途歓迎。まずはカジュアルにお話しましょう。" />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,wght@0,300;0,400;0,500;0,700;1,300&family=Noto+Sans+JP:wght@300;400;500&family=Shippori+Mincho:wght@400;500;600&display=swap" rel="stylesheet" />
+
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+
+  <!-- ==============================
+       LOADER
+       ============================== -->
+  <div class="loader" id="loader" aria-hidden="true">
+    <div class="loader__wrap">
+      <p class="loader__name">LINX</p>
+      <div class="loader__bar"><div class="loader__fill"></div></div>
+    </div>
+  </div>
+
+  <!-- ==============================
+       SITE
+       ============================== -->
+  <div class="site" id="site">
+
+    <!-- NAV -->
+    <header class="nav" id="nav">
+      <div class="nav__inner">
+        <a href="#" class="nav__logo" aria-label="LINX株式会社 トップへ">LINX</a>
+        <nav class="nav__links" aria-label="ナビゲーション">
+          <a href="#about"   class="nav__link">About</a>
+          <a href="#vision"  class="nav__link">Vision</a>
+          <a href="#job"     class="nav__link">Position</a>
+          <a href="#company" class="nav__link">Company</a>
+          <a href="#entry"   class="nav__link">Entry</a>
+        </nav>
+        <a href="#entry" class="nav__cta">
+          <span>Entry</span>
+          <svg width="14" height="14" viewBox="0 0 14 14" fill="none" aria-hidden="true">
+            <path d="M2 12L12 2M12 2H5M12 2V9" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+          </svg>
+        </a>
+      </div>
+    </header>
+
+    <!-- ==============================
+         01 HERO
+         ============================== -->
+    <section class="hero" id="hero">
+
+      <!-- 有機的背景オブジェクト -->
+      <div class="hero__orb-wrap" aria-hidden="true">
+        <svg class="hero__orb" viewBox="0 0 600 600" xmlns="http://www.w3.org/2000/svg">
+          <defs>
+            <radialGradient id="orbGrad" cx="40%" cy="40%" r="60%">
+              <stop offset="0%"   stop-color="#E8401C" stop-opacity="0.9"/>
+              <stop offset="60%"  stop-color="#FF6B3D" stop-opacity="0.6"/>
+              <stop offset="100%" stop-color="#FFB89A" stop-opacity="0"/>
+            </radialGradient>
+          </defs>
+          <path class="orb__path" fill="url(#orbGrad)">
+            <animate attributeName="d"
+              dur="12s" repeatCount="indefinite"
+              values="
+                M300,80 C420,60 540,150 520,280 C500,410 400,500 280,510 C160,520 60,420 70,300 C80,180 180,100 300,80Z;
+                M300,70 C440,80 540,180 510,310 C480,440 360,510 240,490 C120,470 60,360 80,240 C100,120 160,60 300,70Z;
+                M300,90 C410,50 550,160 530,300 C510,440 390,520 260,500 C130,480 50,370 80,250 C110,130 190,130 300,90Z;
+                M300,80 C420,60 540,150 520,280 C500,410 400,500 280,510 C160,520 60,420 70,300 C80,180 180,100 300,80Z
+              "/>
+          </path>
+        </svg>
+        <!-- グリッドライン装飾 -->
+        <div class="hero__grid-lines">
+          <div class="grid-line grid-line--h1"></div>
+          <div class="grid-line grid-line--h2"></div>
+          <div class="grid-line grid-line--v1"></div>
+        </div>
+      </div>
+
+      <div class="hero__content">
+        <div class="hero__eyebrow js-hero-fade" data-delay="200">
+          <span class="eyebrow__num">— 2025</span>
+          <span class="eyebrow__tag">Staff Recruit</span>
+        </div>
+
+        <h1 class="hero__title">
+          <span class="hero__title-row js-hero-line" data-delay="300">
+            <span class="title__en">Link</span>
+          </span>
+          <span class="hero__title-row js-hero-line" data-delay="480">
+            <span class="title__ja">人と仕事を、</span>
+          </span>
+          <span class="hero__title-row js-hero-line" data-delay="640">
+            <span class="title__ja">つなぐ会社へ。</span>
+          </span>
+        </h1>
+
+        <p class="hero__sub js-hero-fade" data-delay="900">
+          アウトソーシングという仕事は、<br class="pc-only">
+          誰かの「困った」を「できた」に変える仕事です。
+        </p>
+
+        <div class="hero__actions js-hero-fade" data-delay="1100">
+          <a href="#about" class="btn btn--primary">
+            <span>私たちを知る</span>
+            <svg width="16" height="16" viewBox="0 0 16 16" fill="none" aria-hidden="true">
+              <path d="M8 2v12M2 8l6 6 6-6" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+          </a>
+          <a href="#entry" class="btn btn--ghost">エントリーする</a>
+        </div>
+      </div>
+
+      <div class="hero__scroll-hint js-hero-fade" data-delay="1400" aria-hidden="true">
+        <div class="scroll-hint__line"></div>
+        <span>Scroll</span>
+      </div>
+
+      <div class="hero__counter" aria-hidden="true">
+        <span class="counter__num js-hero-fade" data-delay="1000">01</span>
+        <span class="counter__total">/ 06</span>
+      </div>
+    </section>
+
+    <!-- ==============================
+         02 ABOUT / SYMPATHY
+         ============================== -->
+    <section class="about js-section" id="about">
+      <div class="about__inner">
+        <div class="about__tag-row js-reveal">
+          <span class="sec-tag">01 — About</span>
+        </div>
+
+        <div class="about__layout">
+          <div class="about__left">
+            <h2 class="about__heading js-reveal">
+              あなたの<em>「働く」</em>を、<br>
+              もっと自由に。
+            </h2>
+          </div>
+          <div class="about__right">
+            <div class="about__questions">
+              <p class="about__q js-reveal" data-delay="0">
+                今の職場、なんとなく続けているだけ——<br>
+                そう感じたことはありませんか？
+              </p>
+              <p class="about__q about__q--shift js-reveal" data-delay="100">
+                「自分に合う仕事って何だろう」と<br>
+                ぐるぐるしたまま、時間だけが過ぎていく。
+              </p>
+              <p class="about__q js-reveal" data-delay="200">
+                未経験だから、と諦めていませんか。
+              </p>
+            </div>
+            <div class="about__answer js-reveal" data-delay="300">
+              <div class="answer__accent"></div>
+              <p>LINXは、人と仕事を<strong>つなぐ</strong>プロフェッショナルです。<br>
+              あなたの「働きたい気持ち」を、<br>
+              私たちは全力でサポートします。</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==============================
+         03 VISION
+         ============================== -->
+    <section class="vision js-section" id="vision">
+      <div class="vision__inner">
+        <div class="vision__tag-row js-reveal">
+          <span class="sec-tag sec-tag--light">02 — Vision</span>
+        </div>
+
+        <h2 class="vision__heading js-reveal">
+          <span>ここで働くと、</span>
+          <span>何が変わるのか。</span>
+        </h2>
+
+        <div class="vision__grid">
+          <div class="vision__main js-reveal" data-delay="0">
+            <p class="vision__copy">
+              アウトソーシングとは、クライアント企業の業務を<br class="pc-only">
+              代わりに担う仕事です。<br><br>
+              事務処理、コールセンター、データ入力——<br>
+              地味に見えて、<strong>企業活動の根幹を支える</strong>、<br>
+              なくてはならない仕事です。<br><br>
+              LINXで働くことで、あなたは<br>
+              「段取り力」「コミュニケーション力」「正確性」<br>
+              という、どこでも通用するスキルを<br>
+              自然と身につけていきます。
+            </p>
+          </div>
+
+          <div class="vision__cards">
+            <div class="vision__card js-reveal" data-delay="60">
+              <div class="card__index">01</div>
+              <h3>段取り力が磨かれる</h3>
+              <p>複数の業務を効率よく回す力は、仕事の現場で実践的に育ちます。</p>
+            </div>
+            <div class="vision__card js-reveal" data-delay="140">
+              <div class="card__index">02</div>
+              <h3>人に感謝される実感</h3>
+              <p>クライアントの業務負荷を減らすことで、直接「ありがとう」が返ってくる仕事です。</p>
+            </div>
+            <div class="vision__card js-reveal" data-delay="220">
+              <div class="card__index">03</div>
+              <h3>多様なキャリアパス</h3>
+              <p>現場スタッフからリーダー、管理職へ。成長のルートが明確に用意されています。</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==============================
+         04 PEOPLE
+         ============================== -->
+    <section class="people js-section" id="culture">
+      <div class="people__inner">
+        <div class="people__tag-row js-reveal">
+          <span class="sec-tag">03 — Real Voices</span>
+        </div>
+
+        <h2 class="people__heading js-reveal">
+          飾らない言葉で。
+        </h2>
+
+        <div class="people__list">
+
+          <article class="people__card js-reveal" data-delay="0">
+            <div class="people__card-inner">
+              <div class="people__portrait people__portrait--a">
+                <svg viewBox="0 0 180 220" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+                  <rect width="180" height="220" fill="#F0EBE3"/>
+                  <circle cx="90" cy="80" r="34" fill="#D4C4B0"/>
+                  <path d="M15 220 C15 165 165 165 165 220" fill="#D4C4B0"/>
+                </svg>
+                <div class="portrait__tag">前職：製造業</div>
+              </div>
+              <div class="people__body">
+                <blockquote>
+                  "正直、アウトソーシングがどんな仕事かよくわかってなかった。
+                  でも入ってみたら、毎日違うことがあって飽きない。
+                  先輩がすぐ助けてくれるので安心して仕事ができています。"
+                </blockquote>
+                <footer>
+                  <strong>田村 さおり</strong>
+                  <span>スタッフ・入社1年半 / 未経験入社</span>
+                </footer>
+              </div>
+            </div>
+          </article>
+
+          <article class="people__card people__card--rev js-reveal" data-delay="100">
+            <div class="people__card-inner">
+              <div class="people__portrait people__portrait--b">
+                <svg viewBox="0 0 180 220" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+                  <rect width="180" height="220" fill="#E3EBF0"/>
+                  <circle cx="90" cy="80" r="34" fill="#B0C4D4"/>
+                  <path d="M15 220 C15 165 165 165 165 220" fill="#B0C4D4"/>
+                </svg>
+                <div class="portrait__tag">前職：接客業</div>
+              </div>
+              <div class="people__body">
+                <blockquote>
+                  "転職を何度か繰り返して、自分でも「また辞めるのかな」と不安だった。
+                  LINXは、担当の方が本当に話を聞いてくれた。
+                  今は毎朝、そこまで憂鬱じゃないです。それが一番の変化かも。"
+                </blockquote>
+                <footer>
+                  <strong>中島 たくや</strong>
+                  <span>スタッフ・入社2年目 / 中途入社</span>
+                </footer>
+              </div>
+            </div>
+          </article>
+
+          <article class="people__card js-reveal" data-delay="200">
+            <div class="people__card-inner">
+              <div class="people__portrait people__portrait--c">
+                <svg viewBox="0 0 180 220" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+                  <rect width="180" height="220" fill="#F0E3EB"/>
+                  <circle cx="90" cy="80" r="34" fill="#D4B0C4"/>
+                  <path d="M15 220 C15 165 165 165 165 220" fill="#D4B0C4"/>
+                </svg>
+                <div class="portrait__tag">前職：販売・小売</div>
+              </div>
+              <div class="people__body">
+                <blockquote>
+                  "残業が少ないと聞いて半信半疑でしたが、本当でした。
+                  定時で帰れる日がこんなにあるって、最初は逆に戸惑った（笑）。
+                  子どもの学校行事にも行けるようになりました。"
+                </blockquote>
+                <footer>
+                  <strong>木村 ゆみこ</strong>
+                  <span>スタッフ・入社3年目 / 育休復帰後入社</span>
+                </footer>
+              </div>
+            </div>
+          </article>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ==============================
+         05 NUMBERS
+         ============================== -->
+    <section class="numbers js-section" id="numbers">
+      <div class="numbers__inner">
+        <div class="numbers__bg-text" aria-hidden="true">DATA</div>
+        <div class="numbers__tag-row js-reveal">
+          <span class="sec-tag sec-tag--light">04 — Numbers</span>
+        </div>
+
+        <div class="numbers__grid">
+          <div class="numbers__item js-reveal" data-delay="0">
+            <div class="num__figure">
+              <span class="num__val js-count" data-target="91">0</span>
+              <span class="num__unit">%</span>
+            </div>
+            <p class="num__label">未経験入社率</p>
+            <p class="num__desc">9割以上が異業種・異職種からの転身。経験より「やる気」を重視しています。</p>
+          </div>
+
+          <div class="numbers__sep js-reveal" data-delay="80" aria-hidden="true"></div>
+
+          <div class="numbers__item js-reveal" data-delay="160">
+            <div class="num__figure">
+              <span class="num__val js-count" data-target="10">0</span>
+              <span class="num__unit">h</span>
+            </div>
+            <p class="num__label">月平均残業時間</p>
+            <p class="num__desc">プライベートも大切にできる環境。定時退社が当たり前の文化を育てています。</p>
+          </div>
+
+          <div class="numbers__sep js-reveal" data-delay="240" aria-hidden="true"></div>
+
+          <div class="numbers__item js-reveal" data-delay="320">
+            <div class="num__figure">
+              <span class="num__val js-count" data-target="88">0</span>
+              <span class="num__unit">%</span>
+            </div>
+            <p class="num__label">3年定着率</p>
+            <p class="num__desc">長く安心して働ける職場づくりに、会社全体で取り組んでいます。</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==============================
+         06 POSITION
+         ============================== -->
+    <section class="position js-section" id="job">
+      <div class="position__inner">
+        <div class="position__tag-row js-reveal">
+          <span class="sec-tag">05 — Position</span>
+        </div>
+
+        <div class="position__head js-reveal">
+          <h2 class="position__title">
+            <em>Outsourcing</em><br>Staff
+          </h2>
+          <p class="position__catch">
+            クライアントの現場に入り込み、<br>
+            業務を支えるプロフェッショナルを募集します。
+          </p>
+        </div>
+
+        <div class="position__table js-reveal">
+          <dl>
+            <div class="pos-row">
+              <dt>仕事内容</dt>
+              <dd>クライアント先での事務補助・データ入力・コールセンター業務・軽作業など。担当スタッフがしっかりサポートします。</dd>
+            </div>
+            <div class="pos-row">
+              <dt>雇用形態</dt>
+              <dd>正社員（試用期間3ヶ月・同条件）</dd>
+            </div>
+            <div class="pos-row">
+              <dt>給与</dt>
+              <dd>月給 20万円〜25万円（経験・スキル考慮）</dd>
+            </div>
+            <div class="pos-row">
+              <dt>勤務時間</dt>
+              <dd>9:00–18:00（休憩1時間）</dd>
+            </div>
+            <div class="pos-row">
+              <dt>休日</dt>
+              <dd>完全週休2日制（土日祝）/ 年間休日120日以上 / 有給・慶弔・産育休あり</dd>
+            </div>
+            <div class="pos-row">
+              <dt>勤務地</dt>
+              <dd>
+                <ul class="pos-locations">
+                  <li><span class="loc-tag">東京</span>東京都豊島区東池袋3-20-9</li>
+                  <li><span class="loc-tag">群馬</span>群馬県高崎市栄町3番11号</li>
+                  <li><span class="loc-tag">神奈川</span>神奈川県横浜市西区みなとみらい3-6-1</li>
+                  <li><span class="loc-tag">大阪</span>大阪府大阪市北区梅田2-4-9</li>
+                  <li><span class="loc-tag">愛知</span>愛知県名古屋市中村区名駅1-1-1</li>
+                </ul>
+              </dd>
+            </div>
+            <div class="pos-row">
+              <dt>応募要件</dt>
+              <dd>高卒以上 / PC基本操作できる方 / 未経験・中途歓迎 / 資格・ポートフォリオ不要</dd>
+            </div>
+            <div class="pos-row">
+              <dt>福利厚生</dt>
+              <dd>社会保険完備 / 交通費全額支給 / 研修制度あり / 資格取得支援 / 定期健康診断</dd>
+            </div>
+          </dl>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==============================
+         COMPANY
+         ============================== -->
+    <section class="company js-section" id="company">
+      <div class="company__inner">
+        <div class="company__tag-row js-reveal">
+          <span class="sec-tag">06 — Company</span>
+        </div>
+
+        <h2 class="company__heading js-reveal">会社概要</h2>
+
+        <div class="company__table js-reveal">
+          <dl>
+            <div class="co-row">
+              <dt>会社名</dt>
+              <dd>LINX株式会社</dd>
+            </div>
+            <div class="co-row">
+              <dt>代表者</dt>
+              <dd>代表取締役　西村 涼太郎</dd>
+            </div>
+            <div class="co-row">
+              <dt>所在地</dt>
+              <dd>〒375-0024<br>群馬県藤岡市藤岡803-2</dd>
+            </div>
+            <div class="co-row">
+              <dt>事業内容</dt>
+              <dd>アウトソーシング業</dd>
+            </div>
+            <div class="co-row">
+              <dt>採用お問い合わせ</dt>
+              <dd><a href="mailto:recruit@linx-co.jp" class="co-mail">recruit@linx-co.jp</a></dd>
+            </div>
+          </dl>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==============================
+         ENTRY CTA
+         ============================== -->
+    <section class="entry js-section" id="entry">
+      <div class="entry__orb" aria-hidden="true"></div>
+      <div class="entry__inner">
+
+        <div class="entry__headline js-reveal">
+          <p class="entry__headline-sub">まず、話だけでもいい。</p>
+          <h2>
+            あなたのペースで、<br>
+            <em>始めてください。</em>
+          </h2>
+          <p class="entry__desc">
+            「転職するか決めていない」「何から始めればいいかわからない」<br class="pc-only">
+            —— そんな状態でも大丈夫です。
+          </p>
+        </div>
+
+        <div class="entry__options js-reveal" data-delay="80">
+          <a href="mailto:recruit@linx-co.jp?subject=カジュアル面談希望" class="entry-opt">
+            <div class="entry-opt__head">
+              <span class="entry-opt__alpha">A</span>
+              <div>
+                <h3>カジュアル面談</h3>
+                <p class="entry-opt__sub">オンライン 30分 / 選考なし / 書類不要</p>
+              </div>
+            </div>
+            <p class="entry-opt__desc">「どんな会社か知りたい」それだけで十分です。何も決まりません。</p>
+            <span class="entry-opt__link">
+              申し込む
+              <svg width="14" height="14" viewBox="0 0 14 14" fill="none" aria-hidden="true">
+                <path d="M2 12L12 2M12 2H5M12 2V9" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+              </svg>
+            </span>
+          </a>
+
+          <a href="mailto:recruit@linx-co.jp?subject=エントリー希望" class="entry-opt entry-opt--main">
+            <div class="entry-opt__badge">MAIN</div>
+            <div class="entry-opt__head">
+              <span class="entry-opt__alpha">B</span>
+              <div>
+                <h3>エントリー</h3>
+                <p class="entry-opt__sub">書類選考 → 面接 / 平均2週間</p>
+              </div>
+            </div>
+            <p class="entry-opt__desc">本格的に選考へ進みたい方。フィードバックを必ずお返しします。</p>
+            <span class="entry-opt__link">
+              エントリーする
+              <svg width="14" height="14" viewBox="0 0 14 14" fill="none" aria-hidden="true">
+                <path d="M2 12L12 2M12 2H5M12 2V9" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+              </svg>
+            </span>
+          </a>
+        </div>
+
+        <!-- Form -->
+        <div class="entry__form-wrap js-reveal" data-delay="160">
+          <p class="form-wrap__label">フォームから送る</p>
+          <form class="entry-form" id="entryForm" novalidate>
+            <div class="entry-form__fields">
+              <div class="f-field">
+                <label for="f-name">お名前 <span class="f-req">必須</span></label>
+                <input type="text" id="f-name" name="name" placeholder="山田 太郎" autocomplete="name" required />
+              </div>
+              <div class="f-field">
+                <label for="f-email">メール <span class="f-req">必須</span></label>
+                <input type="email" id="f-email" name="email" placeholder="hello@example.com" autocomplete="email" required />
+              </div>
+              <div class="f-field">
+                <label for="f-type">ご希望 <span class="f-req">必須</span></label>
+                <select id="f-type" name="type" required>
+                  <option value="">選択してください</option>
+                  <option value="casual">カジュアル面談</option>
+                  <option value="entry">エントリー（選考）</option>
+                </select>
+              </div>
+              <div class="f-field f-field--full">
+                <label for="f-msg">メッセージ（任意）</label>
+                <textarea id="f-msg" name="message" rows="3" placeholder="気になっていること、聞きたいことなど。何でも。"></textarea>
+              </div>
+            </div>
+            <button type="submit" class="f-submit">
+              <span>送信する</span>
+              <svg width="16" height="16" viewBox="0 0 16 16" fill="none" aria-hidden="true">
+                <path d="M2 12L12 2M12 2H5M12 2V9" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+              </svg>
+            </button>
+          </form>
+          <div class="form-done" id="formDone" aria-live="polite">
+            <p class="form-done__mark">✓</p>
+            <p>送信が完了しました。<br>1〜2営業日以内にご連絡いたします。</p>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="footer">
+      <div class="footer__inner">
+        <div class="footer__left">
+          <p class="footer__logo">LINX</p>
+          <p class="footer__tagline">Link people. Link future.</p>
+        </div>
+        <div class="footer__right">
+          <address class="footer__address">
+            〒375-0024 群馬県藤岡市藤岡803-2<br>
+            LINX株式会社<br>
+            <a href="mailto:recruit@linx-co.jp">recruit@linx-co.jp</a>
+          </address>
+          <nav class="footer__nav" aria-label="フッターナビ">
+            <a href="#about">About</a>
+            <a href="#vision">Vision</a>
+            <a href="#job">Position</a>
+            <a href="#company">Company</a>
+            <a href="#entry">Entry</a>
+          </nav>
+        </div>
+        <div class="footer__bottom">
+          <small>© 2025 LINX株式会社 All Rights Reserved.</small>
+        </div>
+      </div>
+    </footer>
+
+  </div><!-- /site -->
+
+  <script src="js/main.js"></script>
+</body>
+</html>
